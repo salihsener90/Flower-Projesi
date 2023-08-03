@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Indie+Flower&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.navbar { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 0px;
+}
+
+.navbar-left {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar-left-logo {
+  
+  font-family: 'Indie Flower';
+  text-decoration: none;
+  line-height: 64px;
+  font-size: 44px;
+  color: rgb(40, 87, 40);
+}
+.navbar-left-logo:hover {
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+.navbar-left-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar-left-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: gray;
+}
+
+.navbar-left-menu a:first-child {
+  color: black;
+  font-weight: 700;
+}
+
+.navbar-left-menu a:hover {
+  color: green;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.navbar-right i {
+  cursor: pointer;
+  font-size: 22px;
+}
+.navbar-right i:hover {
+  color: gray;
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+
+.banner {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #c1dcdc;
+}
+
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 40px;
+  padding: 40px 0 40px 50px;
+  z-index: 2;
+}
+.banner-left h1 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  border: 5px purple;
+  width: 480px;
+}
+.banner-left h1 span {
+  color: rgb(226, 37, 37);
+  font-family: 'Electrolize';
+}
+.banner-left h1 span:hover {
+  cursor: pointer;
+  color: green;
+  transition: ease 0.5s;
+}
+.banner-left-contents {
+  display: flex;
+  gap: 50px;
+}
+.contents:first-child {
+  border-right: 1px;
+  padding-right: 50px;
+}
+
+.contents p {
+  font-size: 32px;
+  font-weight: 600;
+}
+.contents span {
+  font-size: 18px;
+}
+.banner-left-search {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  border-radius: 15px;
+}
+.banner-left-search input {
+  border: none;
+  outline: none;
+  width: 80%;
+  font-size: 18px;
+}
+.banner-left-search i {
+  background-color: #c1dcdc;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.banner-left-search i:hover {
+ cursor: pointer;
+}
+
+.banner-right {
+  width: 50%;
+  position: relative;
+}
+
+.banner-right img {
+  
+  position: absolute;
+  bottom: 44px;
+  transform: scaleX(-1);
+  top: -140px;
+
+}
+.banner-right-bg {
+  position: absolute;
+  background-color: gray;
+  width: 400px;
+  height: 360px;
+  bottom: 0px;
+  right: 10%;
+  border-radius: 50% 20% 0px 50%;
+}
+.product {
+ 
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.product-title {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+.more {
+  background-color: #c1dcdc;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+}
+.product-card {
+  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+.product-cards {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px 0 ;
+}
+.product-cards:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  transition: .3s;
+  border-radius: 15px;
+  
+  
+}
+.product-cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-cards p {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.product-cards span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(134, 126, 126, 0.134);
+  width: 100%;
+  padding: 20px 0;
+}
+.about-title {
+  text-align: center;
+}
+.about-title h1 {
+  font-size: 32px;
+}
+.about-title p {
+  font-size: 18px;
+  color: gray;
+}
+.about-card {
+  display: flex;
+  align-items: center;
+}
+.about-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-cards i {
+  font-size: 42px;
+  background-color: #c1dcdc;
+  padding: 20px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.about-cards p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about-cards span {
+  text-align: center;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.categories-title {
+  margin-bottom: 30px;
+}
+
+.categories-title p {
+  text-align: center;
+}
+.categories-title h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.categories-banners {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.categories-banners-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  
+}
+.categories-banners-card:hover {
+ cursor: pointer;
+ box-shadow: 0 0 10px rgba(128, 24, 24, 1.5);
+ transition: .5s;
+ border-radius: 15px;
+  
+}
+
+.categories-banners-card img {
+  width: 100%;
+}
+.categories-banners-card h1 {
+  text-align: center;
+}
+.categories-banners-card span {
+  text-align: center;
+  color: gray;
+  width: 100%;
+}
+.footer {
+  
+  display: flex;
+  flex-direction: row;
+  background-color: #c1dcdc;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 545px) {
+  .categories-banners-card h1 {
+    font-size: 20px;
+  }
+  .categories-banners-card span {
+    font-size: 15px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #c1dcdc;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-left h1 {
+  font-family: "Indie Flower";
+}
+.footer-left p {
+  font-size: 18px;
+  color: black;
+}
+.footer-left-social {
+  /* SOSYAL MEDYALARIN BULUNDUGU CLASS */
+  display: flex;
+  gap: 5px;
+  width: 5px;
+}
+.footer-left-social a {
+  border: 1px solid rgba(134, 126, 126, 0.655);
+  color: #566060;
+  padding: 20px;
+  border-radius: 50%;
+}
+.footer-left-social a:hover {
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+.footer-right {
+  display: flex;
+  gap: 10px;
+  padding-right: 70px;
+}
+.footer-right ul li {
+  list-style-type: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.footer-right ul li:nth-child(1) {
+  font-weight: 800;
+}
+.footer-right ul li:hover {
+  transform: scale(1.1);
+  color: gray;
+}
+@media screen and (max-width: 900px) {
+  /* 0 - 900px arasinda iken */
+  .banner-left {
+    width: 100%;
+  }
+  .banner-left h1 {
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 35px;
+    width: 100%;
+  }
+  .banner-left-contents {
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer-right {
+    display: none;
+  }
+  .footer-left {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
